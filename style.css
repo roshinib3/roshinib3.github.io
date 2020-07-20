@@ -43,10 +43,10 @@
 	body {
 		height: 100%;
 		background-color: #000000;
-		background-image: url("https://github.com/roshinib3/roshinib3.github.io/blob/master/overlay.png"), -moz-linear-gradient(60deg, rgba(5,130,122,0.35) 20%, rgba(26,108,144,0.35) 67%, rgba(1,39,90,0.35)), url("https://github.com/roshinib3/roshinib3.github.io/blob/master/back.jpg");
-		background-image: url("https://github.com/roshinib3/roshinib3.github.io/blob/master/overlay.png"), -webkit-linear-gradient(60deg, rgba(5,130,122,0.35) 20%, rgba(26,108,144,0.35) 67%, rgba(1,39,90,0.35)), url("https://github.com/roshinib3/roshinib3.github.io/blob/master/back.jpg");
-		background-image: url("https://github.com/roshinib3/roshinib3.github.io/blob/master/overlay.png"), -ms-linear-gradient(60deg, rgba(5,130,122,0.35) 20%, rgba(26,108,144,0.35) 67%, rgba(1,39,90,0.35)), url("https://github.com/roshinib3/roshinib3.github.io/blob/master/back.jpg");
-		background-image: url("https://github.com/roshinib3/roshinib3.github.io/blob/master/overlay.png"), linear-gradient(60deg, rgba(5,130,122,0.35) 20%, rgba(26,108,144,0.35) 67%, rgba(1,39,90,0.35)), url("https://github.com/roshinib3/roshinib3.github.io/blob/master/back.jpg");
+		background-image: url("overlay.png"), -moz-linear-gradient(60deg, rgba(5,130,122,0.35) 20%, rgba(26,108,144,0.35) 67%, rgba(1,39,90,0.35)), url("back.jpg");
+		background-image: url("overlay.png"), -webkit-linear-gradient(60deg, rgba(5,130,122,0.35) 20%, rgba(26,108,144,0.35) 67%, rgba(1,39,90,0.35)), url("back.jpg");
+		background-image: url("overlay.png"), -ms-linear-gradient(60deg, rgba(5,130,122,0.35) 20%, rgba(26,108,144,0.35) 67%, rgba(1,39,90,0.35)), url("back.jpg");
+		background-image: url("overlay.png"), linear-gradient(60deg, rgba(5,130,122,0.35) 20%, rgba(26,108,144,0.35) 67%, rgba(1,39,90,0.35)), url("back.jpg");
 		background-repeat: repeat, no-repeat, no-repeat;
 		background-size: 100px 100px, cover, cover;
 		background-position: top left, center center, bottom center;
@@ -63,10 +63,10 @@
 			opacity: 0;
 			z-index: 1;
 			background-color: #ffffff;
-			background-image: url("images/overlay.png"), -moz-linear-gradient(60deg, rgba(5,130,122,0.35) 20%, rgba(26,108,144,0.35) 67%, rgba(1,39,90,0.35));
-			background-image: url("images/overlay.png"), -webkit-linear-gradient(60deg, rgba(5,130,122,0.35) 20%, rgba(26,108,144,0.35) 67%, rgba(1,39,90,0.35));
-			background-image: url("images/overlay.png"), -ms-linear-gradient(60deg, rgba(5,130,122,0.35) 20%, rgba(26,108,144,0.35) 67%, rgba(1,39,90,0.35));
-			background-image: url("images/overlay.png"), linear-gradient(60deg, rgba(5,130,122,0.35) 20%, rgba(26,108,144,0.35) 67%, rgba(1,39,90,0.35));
+			background-image: url("overlay.png"), -moz-linear-gradient(60deg, rgba(5,130,122,0.35) 20%, rgba(26,108,144,0.35) 67%, rgba(1,39,90,0.35));
+			background-image: url("overlay.png"), -webkit-linear-gradient(60deg, rgba(5,130,122,0.35) 20%, rgba(26,108,144,0.35) 67%, rgba(1,39,90,0.35));
+			background-image: url("overlay.png"), -ms-linear-gradient(60deg, rgba(5,130,122,0.35) 20%, rgba(26,108,144,0.35) 67%, rgba(1,39,90,0.35));
+			background-image: url("overlay.png"), linear-gradient(60deg, rgba(5,130,122,0.35) 20%, rgba(26,108,144,0.35) 67%, rgba(1,39,90,0.35));
 			background-repeat: repeat,			no-repeat;
 			background-size: 100px 100px, cover;
 			background-position: top left,		center center;
