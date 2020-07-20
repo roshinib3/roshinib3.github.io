@@ -43,10 +43,10 @@
 	body {
 		height: 100%;
 		background-color: #000000;
-		background-image: url("overlay.png"), -moz-linear-gradient(60deg, rgba(5,130,122,0.35) 20%, rgba(26,108,144,0.35) 67%, rgba(1,39,90,0.35)), url("back.jpg");
-		background-image: url("overlay.png"), -webkit-linear-gradient(60deg, rgba(5,130,122,0.35) 20%, rgba(26,108,144,0.35) 67%, rgba(1,39,90,0.35)), url("back.jpg");
-		background-image: url("overlay.png"), -ms-linear-gradient(60deg, rgba(5,130,122,0.35) 20%, rgba(26,108,144,0.35) 67%, rgba(1,39,90,0.35)), url("back.jpg");
-		background-image: url("overlay.png"), linear-gradient(60deg, rgba(5,130,122,0.35) 20%, rgba(26,108,144,0.35) 67%, rgba(1,39,90,0.35)), url("back.jpg");
+		background-image: url("overlay.png"), -moz-linear-gradient(60deg, rgba(5,130,122,0.35) 20%, rgba(26,108,144,0.35) 67%, rgba(1,39,90,0.35)), url("https://drive.google.com/uc?id=1UDUMGIPr9Si_IFLRW2tx8QTcYaqXmNJM");
+		background-image: url("overlay.png"), -webkit-linear-gradient(60deg, rgba(5,130,122,0.35) 20%, rgba(26,108,144,0.35) 67%, rgba(1,39,90,0.35)), url("https://drive.google.com/uc?id=1UDUMGIPr9Si_IFLRW2tx8QTcYaqXmNJM");
+		background-image: url("overlay.png"), -ms-linear-gradient(60deg, rgba(5,130,122,0.35) 20%, rgba(26,108,144,0.35) 67%, rgba(1,39,90,0.35)), url("https://drive.google.com/uc?id=1UDUMGIPr9Si_IFLRW2tx8QTcYaqXmNJM");
+		background-image: url("overlay.png"), linear-gradient(60deg, rgba(5,130,122,0.35) 20%, rgba(26,108,144,0.35) 67%, rgba(1,39,90,0.35)), url("https://drive.google.com/uc?id=1UDUMGIPr9Si_IFLRW2tx8QTcYaqXmNJM");
 		background-repeat: repeat, no-repeat, no-repeat;
 		background-size: 100px 100px, cover, cover;
 		background-position: top left, center center, bottom center;
