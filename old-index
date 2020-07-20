@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Roshini Balasubramanian</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+	<center>
+	<h1>Roshini Balasubramanian</h1>
+		<div>
+			<a href="https://www.linkedin.com/in/roshinibala/"><img vertical-align: "middle" alt="LinkedIn"src="https://drive.google.com/uc?id=1_j1SozhQOF2m6Hyf8Qr0erhOR7cM5vAI" width="30" height="30"></a>
+			<a href="https://github.com/roshinib3"><img vertical-align: "middle" alt="GitHub"src="https://drive.google.com/uc?id=1em7kQeCLtIrC3PCCFG5v_nO8LfGuAhAG" width="30" height="30"></a>
+			<a href="mailto:roshinib@princeton.edu; roshini.bala123@gmail.com"><img vertical-align: "middle" alt="GitHub"src="https://drive.google.com/uc?id=1aYWy9f9HqhQPIv_BTPjTtHIxBIsPgmXN" width="30" height="34"></a>
+		</div>
+		<div>	<h2 style="color:#00008B">hello!</h2>
+			<p style = "width: 350px">I'm a rising third year <b> undergraduate at Princeton University</b>, studying 
+				<a href=https://orfe.princeton.edu/home>Operations Research and Financial Engineering</a> with minors in 
+				<a href=https://www.cs.princeton.edu/ugrad/certificate-program>Computer Science</a>, 
+				<a href=https://csml.princeton.edu/>Statistics & Machine Learning</a>, 
+				<a href=https://orfe.princeton.edu/undergraduate/certificates/ems>Engineering & Management Systems</a>, and 
+				<a href=https://globalhealth.princeton.edu/>Global Health & Health Policy</a>.</p>
+		</div>
+		<div>	<h2 style="color:#00008B"></h2>
+			<p style = "width: 350px"> </p>
+		</div>
+	<!-- Create Word Cloud Using d3 --> 	
+        <meta charset="utf-8">
+        <script src="https://d3js.org/d3.v4.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/d3.layout.cloud.js"></script>
+
+        <div id="my_dataviz"></div>
+        <script>
+            var myWords = [
+            {word: "Data Science", size: "15"}, 
+            {word: "Machine Learning", size: "20"}, 
+            {word: "Predictive Analytics", size: "20"}, 
+            {word: "Big Data", size: "13"}, 
+            {word: "Internet of Things", size: "5"}, 
+            {word: "Modelling", size: "10"}, 
+            {word: "Data Visualization", size: "10"}, 
+            {word: "NLP", size: "7"}, 
+            {word: "Optimization", size: "7"},
+            {word: "Market Research", size: "10"},
+            {word: "Business Intelligence", size: "5"},
+            {word: "Finance", size: "15"},
+            {word: "Investing", size: "5"},
+            {word: "Public Policy", size: "10"},
+            {word: "Education", size: "5"},
+            {word: "Advocacy", size: "10"},
+            {word: "Entrepreneurship", size: "15"},
+            {word: "Product Management", size: "10"},
+
+            {word: "Healthcare", size: "218"},
+            {word: "Pharmaceuticals", size: "5"},
+            {word: "Medical Devices", size: "10"},
+            {word: "Population Health", size: "10"},
+            {word: "Hospital Administration", size: "5"},
+            {word: "Women's Health", size: "10"},
+
+            {word: "Oboe", size: "6"},
+            {word: "Music", size: "10"},
+            {word: "Orchestra", size: "8"} ]
+
+        var margin = {top: 0, right: 0, bottom: 0, left: 0},
+            width = 450 - margin.left - margin.right,
+            height = 450 - margin.top - margin.bottom;
+
+        var svg = d3.select("#my_dataviz").append("svg")
+            .attr("width", width + margin.left + margin.right)
+            .attr("height", height + margin.top + margin.bottom)
+            .append("g")
+            .attr("transform",
+                "translate(" + margin.left + "," + margin.top + ")");
+
+        var layout = d3.layout.cloud()
+        .size([width, height])
+        .words(myWords.map(function(d) { return {text: d.word, size:d.size}; }))
+        .padding(5.7)        //space between words
+        .rotate(0)
+        .fontSize(function(d) { return d.size; })      // font size of words
+        .on("end", draw);
+    layout.start();
+
+
+    function draw(words) {
+    svg
+    .append("g")
+      .attr("transform", "translate(" + layout.size()[0] / 2 + "," + layout.size()[1] / 2 + ")")
+      .selectAll("text")
+        .data(words)
+      .enter().append("text")
+        .style("font-size", function(d) { return d.size; })
+        .style("fill", "#000000")
+        .attr("text-anchor", "middle")
+        .style("font-family", "monospace")
+        .attr("transform", function(d) {
+          return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
+        })
+        .text(function(d) { return d.text; });
+    }
+    </script>
+	</center>
+	</body>
+</html>
