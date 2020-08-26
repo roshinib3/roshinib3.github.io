@@ -343,7 +343,7 @@
 				top: 50%;
 				left: -3em;
 				width: calc(100% + 6em);
-				height: 1px;
+				height: 0.5px;
 				z-index: -1;
 				background: #c8cccf;
 			}
